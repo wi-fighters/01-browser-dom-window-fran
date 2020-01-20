@@ -1,11 +1,7 @@
-// Variables
-const randomNumber = Math.floor(Math.random() * 10).toString();
-
 window.onload = function() {
-    const randomNumber = Math.floor(Math.random() * 10).toString();
+    const randomNumber = Math.floor(Math.random() * 10 + 1).toString();
     let guessedNumber = prompt('Guess a number between 1-10:');
     let attempts = 1;
-    console.log(randomNumber)
 
     while (attempts < 3) {
         if (randomNumber !== guessedNumber) {

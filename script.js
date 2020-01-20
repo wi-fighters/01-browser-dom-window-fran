@@ -15,8 +15,6 @@ window.onload = function() {
     return alert('Sorry, you faild to guess the number in three attempts');
 }
 
-playAgain = document.getElementById('play-again')
-
-playAgain.addEventListener('click', function() {
+document.getElementById('play-again').addEventListener('click', function() {
     return location.reload()
 });

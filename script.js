@@ -5,10 +5,9 @@ window.onload = function() {
     const randomNumber = Math.floor(Math.random() * 10).toString();
     let guessedNumber = prompt('Guess a number between 1-10:');
     let attempts = 1;
-    console.log(randomNumber);
-    console.log(guessedNumber);
+    console.log(randomNumber)
 
-    for (let i = 0; i < 2; i++) {
+    while (attempts < 3) {
         if (randomNumber !== guessedNumber) {
             guessedNumber = prompt('Wrong!!! Try Again!');
             attempts += 1;
